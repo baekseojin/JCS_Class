@@ -1,0 +1,33 @@
+create table TBL_CAR_202301(
+CAR_NUMBER char(10) not null primary key,
+CAR_NAME varchar2(15),
+OWNER_NAME varchar2(20)
+);
+
+insert into TBL_CAR_202301 values ('11가1111','그랜저','박선수');
+insert into TBL_CAR_202301 values ('22가1111','K3','백선수');
+insert into TBL_CAR_202301 values ('33가1111','셀토스','채선수');
+insert into TBL_CAR_202301 values ('44가1111','SM5','임선수');
+insert into TBL_CAR_202301 values ('55가1111','티볼리','한선수');
+
+create table TBL_PARKING_202301(
+CAR_NUMBER char(10),
+LOCATION char(4),
+ENTRANCE_TIME varchar2(6),
+DEPARTURE_TIME varchar2(6),
+primary key(CAR_NUMBER, LOCATION)
+);
+
+insert into TBL_PARKING_202301 values ('11가1111','A001','11:22',' ');
+
+
+create table TBL_PARKING_LOT_202301(
+LOCATION char(4) not null primary key,
+HOURLY_PARKING_FEE number(10)
+);
+
+insert into TBL_PARKING_LOT_202301 values ('A001',1000);
+insert into TBL_PARKING_LOT_202301 values ('A002',1000);
+insert into TBL_PARKING_LOT_202301 values ('A003',1000);
+insert into TBL_PARKING_LOT_202301 values ('A004',1000);
+insert into TBL_PARKING_LOT_202301 values ('A005',1000);

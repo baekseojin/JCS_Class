@@ -1,0 +1,31 @@
+1. Dynamic Web Project 만들기
+
+2. 아파치 9.0 서버 추가
+
+	2-1. port 번호 8090으로 변경
+
+3. 언어 설정 window -> preferances
+
+	3-1. encoding 검색창에 쳐서 utf-8 4개 변경
+	3-2. spelling 검색창에 쳐서 utf-8 1개 변경
+
+4. WebContent -> WEB-INF -> lib 폴더에 ojdbc6 연결	
+	-> C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib 경로
+
+5. JSP 파일 생성 
+코드 작성
+index.jsp
+header.jsp
+footer.jsp
+style.css
+
+6. DB 연동
+
+Data Source Explorer -> Database Connections 우클릭 -> new -> oracle -> oracle thin driver 11 -> jar14 지우고 jar6 추가 -> db를 xe로 바꾸기 -> server를 localhost로 바꾸기 -> system / 1234 입력후 핑테스트 -> 나온 후 open SQL Scrapbook
+
+
+
+-------- 유의할 코드 -------------
+1. 
+
+<jsp:include page="header.jsp" />
